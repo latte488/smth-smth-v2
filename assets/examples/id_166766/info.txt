@@ -1,0 +1,9 @@
+Id of the video sample = 166766
+True label --> 57 (Poking something so that it falls over)
+
+Top-5 Predictions:
+Top 1 :== Poking something so that it falls over. Prob := 55.23%
+Top 2 :== Tipping something over. Prob := 40.12%
+Top 3 :== Poking a stack of something so the stack collapses. Prob := 4.04%
+Top 4 :== Tipping something with something in it over, so something in it falls out. Prob := 0.26%
+Top 5 :== Poking something so it slightly moves. Prob := 0.12%

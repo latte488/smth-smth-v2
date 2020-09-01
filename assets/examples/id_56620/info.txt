@@ -1,0 +1,11 @@
+Id of the video sample = 56620
+True label --> 12 (Dropping something onto something)
+
+Top-5 Predictions:
+Top 1 :== Dropping something next to something. Prob := 41.51%
+Top 2 :== Throwing something. Prob := 13.26%
+Top 3 :== Throwing something onto a surface. Prob := 8.92%
+Top 4 :== Something falling like a rock. Prob := 8.68%
+Top 5 :== Dropping something onto something. Prob := 4.55%
+
+Predicted index chosen = 11 (Dropping something next to something)

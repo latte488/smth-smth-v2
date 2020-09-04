@@ -9,7 +9,8 @@ class Model(nn.Module):
     def __init__(self, column_units):
         super(Model, self).__init__()
         self.cnn = resnet.resnet50(pretrained=True)
-        self.rnn = rc.ESN(2048 * 3 * 3, 1024, batch_first=True)
+        # self.rnn = rc.ESN(2048 * 3 * 3, 1024, batch_first=True)
+        self.rnn = nn.LSTM(2048 * 3 * 3, 1024, batch_first=True)
         self.classifier = nn.Sequential(
             nn.Dropout(0.5),
             nn.Linear(1024, column_units),
@@ -34,7 +35,8 @@ class Model(nn.Module):
             x = x.detach()
 
         x = x.view(b, t, -1)
-        x = self.rnn(x)
+        # x = self.rnn(x)
+        x, _ = self.rnn(x)
         x = self.classifier(x[:, -1, :])
         return x
 

@@ -178,3 +178,131 @@ def plot_pca_box_count(vector, label, mutual_info, result_dir, file_header, tau)
         
             if i_dim == 2:
                 break
+
+
+if __name__ == '__main__':
+
+    import sys
+    import time
+    import signal
+    import importlib
+
+    import torch
+    import torch.nn as nn
+
+    from utils import *
+    from callbacks import (PlotLearning, AverageMeter)
+    from models.multi_column import MultiColumn
+    import torchvision
+    from transforms_video import *
+
+
+    # load configurations
+    args = load_args()
+    config = load_json_config(args.config)
+
+    # set column model
+    file_name = config['conv_model']
+    cnn_def = importlib.import_module("{}".format(file_name))
+
+    # setup device - CPU or GPU
+    device, device_ids = 
+    print(" > Using device: {}".format(device.type))
+    print(" > Active GPU ids: {}".format(device_ids))
+
+    best_loss = float('Inf')
+
+    if config["input_mode"] == "av":
+        from data_loader_av import VideoFolder
+    elif config["input_mode"] == "skvideo":
+        from data_loader_skvideo import VideoFolder
+    else:
+        raise ValueError("Please provide a valid input mode")
+
+
+def main():
+    global args, best_loss
+
+    # set run output folder
+    model_name = config["model_name"]
+    output_dir = config["output_dir"]
+    save_dir = os.path.join(output_dir, model_name)
+    print(" > Output folder for this run -- {}".format(save_dir))
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+        os.makedirs(os.path.join(save_dir, 'plots'))
+
+    # assign Ctrl+C signal handler
+    signal.signal(signal.SIGINT, ExperimentalRunCleaner(save_dir))
+
+    # create model
+    print(" > Creating model ... !")
+    model = MultiColumn(config['num_classes'], cnn_def.Model,
+                        int(config["column_units"]))
+
+    # define augmentation pipeline
+    upscale_size_train = int(config['input_spatial_size'] * config["upscale_factor_train"])
+    upscale_size_eval = int(config['input_spatial_size'] * config["upscale_factor_eval"])
+
+    # Center crop videos during evaluation
+    transform_eval_pre = ComposeMix([
+            [Scale(upscale_size_eval), "img"],
+            [torchvision.transforms.ToPILImage(), "img"],
+            [torchvision.transforms.CenterCrop(config['input_spatial_size']), "img"],
+             ])
+
+    # Transforms common to train and eval sets and applied after "pre" transforms
+    transform_post = ComposeMix([
+            [torchvision.transforms.ToTensor(), "img"],
+            [torchvision.transforms.Normalize(
+                       mean=[0.485, 0.456, 0.406],  # default values for imagenet
+                       std=[0.229, 0.224, 0.225]), "img"]
+             ])
+
+    val_data = VideoFolder(root=config['data_folder'],
+                           json_file_input=config['json_data_val'],
+                           json_file_labels=config['json_file_labels'],
+                           clip_size=config['clip_size'],
+                           nclips=config['nclips_val'],
+                           step_size=config['step_size_val'],
+                           is_val=True,
+                           transform_pre=transform_eval_pre,
+                           transform_post=transform_post,
+                           get_item_id=True,
+                           )
+
+    val_loader = torch.utils.data.DataLoader(
+        val_data,
+        batch_size=config['batch_size'], shuffle=False,
+        num_workers=config['num_workers'], pin_memory=True,
+        drop_last=False)
+
+    test_data = VideoFolder(root=config['data_folder'],
+                            json_file_input=config['json_data_test'],
+                            json_file_labels=config['json_file_labels'],
+                            clip_size=config['clip_size'],
+                            nclips=config['nclips_val'],
+                            step_size=config['step_size_val'],
+                            is_val=True,
+                            transform_pre=transform_eval_pre,
+                            transform_post=transform_post,
+                            get_item_id=True,
+                            is_test=True,
+                            )
+
+    test_loader = torch.utils.data.DataLoader(
+        test_data,
+        batch_size=config['batch_size'], shuffle=False,
+        num_workers=config['num_workers'], pin_memory=True,
+        drop_last=False)
+
+    print(" > Number of dataset classes : {}".format(len(train_data.classes)))
+    assert len(train_data.classes) == config["num_classes"]
+
+    validate(val_loader, model, criterion, train_data.classes_dict)
+
+    for inputs, labels in test_loader:
+        break
+
+    print(inputs.shape)
+    print(labels.shape)

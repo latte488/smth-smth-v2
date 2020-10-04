@@ -34,6 +34,8 @@ if config["input_mode"] == "av":
     from data_loader_av import VideoFolder
 elif config["input_mode"] == "skvideo":
     from data_loader_skvideo import VideoFolder
+elif config["input_mode"] == "uiuc":
+    from data_loader_uiuc import VideoFolder
 else:
     raise ValueError("Please provide a valid input mode")
 
@@ -325,16 +327,20 @@ def validate(val_loader, model, criterion, class_to_idx=None):
 
             target = target.to(device)
 
+            '''
             if input_var[-1].shape != (8, 3, 72, 84, 84):
                 print(f'len(input_var) : {len(input_var)}')
                 print(f'input_var[-1].shape : {input_var[-1].shape}')
                 print(f'target.shape : {target.shape}')
+            '''    
 
             # compute output and loss
             output, features = model(input_var, config['save_features'])
 
+            '''
             if input_var[-1].shape != (8, 3, 72, 84, 84):
                 print(f'output.shape : {output.shape}')
+            '''
 
             loss = criterion(output, target)
 

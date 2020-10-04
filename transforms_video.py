@@ -71,8 +71,8 @@ class RandomCropVideo(object):
         """
         th, tw = self.size
         h, w = imgs[0].shape[:2]
-        x1 = np.random.randint(0, w - tw)
-        y1 = np.random.randint(0, h - th)
+        x1 = np.random.randint(0, w - tw) if w - tw > 0 else 0
+        y1 = np.random.randint(0, h - th) if h - th > 0 else 0
         for idx, img in enumerate(imgs):
             if self.padding > 0:
                 img = cv2.copyMakeBorder(img, self.padding, self.padding,

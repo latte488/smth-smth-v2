@@ -10,7 +10,7 @@ class Model(nn.Module):
         super(Model, self).__init__()
         self.cnn = resnet.resnet50(pretrained=True)
         # self.rnn = rc.ESN(2048 * 3 * 3, 1024, batch_first=True)
-        self.rnn = nn.LSTM(2048 * 3 * 3, 1024, batch_first=True)
+        self.rnn = nn.RNN(2048 * 3 * 3, 1024, batch_first=True)
         self.classifier = nn.Sequential(
             nn.Dropout(0.5),
             nn.Linear(1024, column_units),

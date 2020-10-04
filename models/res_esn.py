@@ -35,6 +35,9 @@ class Model(nn.Module):
 
         x = x.view(b, t, -1)
         x = self.rnn(x)
+
+        self.h = x.data
+
         x = self.classifier(x[:, -1, :])
         return x
 

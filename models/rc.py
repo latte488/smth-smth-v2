@@ -12,7 +12,7 @@ class ESNCell(nn.Module):
         super(ESNCell, self).__init__()
         self.size_in = size_in
         self.size_res = size_res
-        self.w_in = Parameter(torch.Tensor(size_in, size_res))
+        self.w_in = Parameter(torch.Tensor(size_in, size_res))   
         self.register_buffer('w_res', torch.Tensor(size_res, size_res))
         self.b = Parameter(torch.Tensor(size_res))
         self.reset_parameters()
@@ -38,14 +38,10 @@ class ESNCell(nn.Module):
     def _reset_state(self):
         init.zeros_(self.x)
 
-    def reset(self, batch_size, device):
-        self.register_buffer('x', torch.Tensor(batch_size, self.size_res))
-        self.x = self.x.to(device)
-        self._reset_state()
-
-    def forward(self, u):
-        self.x = torch.tanh(u @ self.w_in + self.x @ self.w_res + self.b)
-        return self.x
+    def forward(self, inputs, states):
+        return torch.tanh(inputs @ self.w_in \
+            + states @ self.w_res \
+            + self.b)
 
 class ESN(nn.Module):
     def __init__(self, size_in, size_res, batch_first=False):
@@ -55,17 +51,26 @@ class ESN(nn.Module):
 
     def forward(self, xs):
         if self.batch_first:
-            xs = xs.permute(1, 0, 2)
+            b, t, f = 0, 1, 2
+            xs = xs.permute(t, b, f)
             xs = self._forward(xs)
-            xs = xs.permute(1, 0, 2)
+            xs = xs.permute(t, b, f)
         else:
             xs = self._forward(xs)
         return xs
 
 
     def _forward(self, xs):
-        self.cell.reset(xs.size(1), xs.device)
-        return torch.stack([self.cell(x) for x in xs])
-        
-    def state(self):
-        return self.cell.x
+        states = torch.Tensor(xs.size(1), self.cell.size_res).to(xs.device)
+        init.zeros_(states)
+        states_list = []
+        for x in xs:
+            states = self.cell(x, states.detach())
+            states_list.append(states)
+        return torch.stack(states_list)
+
+if __name__ == '__main__':
+    model = ESN(4, 10)
+    inputs = torch.randn(6, 8, 4)
+    outputs = model(inputs)
+    print(outputs.shape)

@@ -3,7 +3,7 @@
 configs=(
     'config_crnn.json'
     'config_clstm.json'
-    'config_cesn.json'
+    #'config_cesn.json'
 )
 
 for config in ${configs[@]}; do

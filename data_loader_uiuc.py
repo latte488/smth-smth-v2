@@ -16,10 +16,9 @@ import toml
 from PIL import Image
 
 class UiucVideo(torchvision.datasets.VisionDataset):
-    def __init__(self, root, number, transforms=None, transform=None, target_transform=None):
+    def __init__(self, root, transforms=None, transform=None, target_transform=None):
         super(UiucVideo, self).__init__(root, transforms, transform, target_transform)
-        self.root = f'{self.root}/uiuc_T{number:02}_camera_action_dataset'
-        self.number = number
+        self.root = f'{root}/uiuc_combine_camera_action_dataset'
         label_path = f'{self.root}/0.toml'
         label_dist = toml.load(label_path)
         self.action_label_dist = label_dist['Action label']
@@ -46,19 +45,17 @@ class UiucVideo(torchvision.datasets.VisionDataset):
 
 class UiucVideoV1(UiucVideo):
     def __init__(self, root, train=True, **kwargs):
-        super(UiucVideoV1, self).__init__(root, 1, **kwargs)
+        super(UiucVideoV1, self).__init__(root, **kwargs)
+        partition = self.size * 4 // 5
         if train:
-            self.number = 12800
             self.offset = 0
+            self.size = partition
         else:
-            self.number = 12800 // 5
-            self.offset = 12800 * 4 // 5
+            self.offset = partition
+            self.size = self.size - partition
 
     def __getitem__(self, index):
         return super(UiucVideoV1, self).__getitem__(self.offset + index)
-
-    def __len__(self):
-        return self.number
 
 class VideoFolder(torch.utils.data.Dataset):
 
@@ -66,8 +63,8 @@ class VideoFolder(torch.utils.data.Dataset):
                  nclips, step_size, is_val, transform_pre=None, transform_post=None,
                  augmentation_mappings_json=None, augmentation_types_todo=None,
                  get_item_id=False, is_test=False):
-        self.classes = list(range(8))
         self.uiuc = UiucVideoV1('/data-ssd1', not is_val)
+        self.classes = list(range(len(list(self.uiuc.action_label_dist))))
         self.transform_pre = transform_pre
         self.transform_post = transform_post
 

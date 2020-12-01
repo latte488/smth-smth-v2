@@ -1,9 +1,10 @@
 #!/bin/bash
 
 configs=(
-    'config_crnn512.json'
-    'config_clstm512.json'
-    #'config_cesn.json'
+    'config_crnn256.json'
+    'config_crnn128.json'
+    'config_clstm256.json'
+    'config_clstm128.json'
 )
 
 for config in ${configs[@]}; do

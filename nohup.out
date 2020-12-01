@@ -1,0 +1,23 @@
+
+7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz (506E3),ASM,AES-NI)
+
+Scanning the drive:
+1 folder, 40001 files, 434320943 bytes (415 MiB)
+
+Creating archive: uccad.7z
+
+Items to compress: 40002
+
+
+Files read from disk: 40001
+Archive size: 363076584 bytes (347 MiB)
+Everything is Ok
+Traceback (most recent call last):
+  File "selected_dropout2.py", line 166, in <module>
+    plot_mutual_information(vector, label, config_name)
+NameError: name 'plot_mutual_information' is not defined
+  File "selected_dropout2.py", line 195
+    return losses.avg, top1.avg, top5.avg
+    ^
+SyntaxError: 'return' outside function

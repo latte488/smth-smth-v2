@@ -1,3 +1,7 @@
+dir_box_count
+dir_box_count2
+dir_box_count3
+
 notebooks/miss_videos/
 *.png
 *.pth.tar

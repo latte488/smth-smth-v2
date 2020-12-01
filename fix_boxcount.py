@@ -244,11 +244,7 @@ if __name__ == '__main__':
 
     # create model
     print(" > Creating model ... !")
-    model = MultiColumn(config['num_classes'], cnn_def.Model,
-                        int(config["column_units"]))
-
-    # multi GPU setting
-    model = torch.nn.DataParallel(model, device_ids).to(device)
+    model = cnn_def.Model(config['num_classes']).to(device)
 
     # optionally resume from a checkpoint
     checkpoint_path = os.path.join(config['output_dir'],
@@ -315,9 +311,9 @@ if __name__ == '__main__':
                 input_var = [input.to(device)]
 
             # compute output and loss
-            output, features = model(input_var, config['save_features'])
+            output = model(input_var)
 
-            state = model.module.conv_column.h[0]
+            state = model.h[0]
 
             vector = np.array([s.cpu().numpy().flatten() for s in state])
             label = target.data.numpy()[0]

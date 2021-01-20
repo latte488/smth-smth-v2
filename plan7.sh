@@ -13,6 +13,6 @@ configs=(
 )
 
 for config in ${configs[@]}; do
-    python3 -u selected_dropout2.py --config fix_clstm32 --drate ${config} > select_fix_clstm32_${config}.log
+    python3 -u selected_dropout2.py --config fix_crnn8192 --drate ${config} > selectT_fix_crnn8192_${config}.log
 done
 

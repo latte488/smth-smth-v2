@@ -7,23 +7,34 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 import toml
+import time
+from multiprocessing import Pool
 
 def mutual_information(input_hidden, input_label):
     # todo: might be modified because of the difference of calculation proces
     _, hist_edge = np.histogram(input_hidden, bins=8, range=(-1, 1))
     discrete_hidden_ids = np.digitize(input_hidden, hist_edge)
+    start = time.time()
     mutual_info = mutual_info_score(input_label, discrete_hidden_ids)
+    stop = time.time()
+    print(f'time: {stop - start}s')
     return mutual_info
 
+def mutual_information_from_tuple(hidden_and_label):
+    hidden, label = hidden_and_label
+    return mutual_information(hidden, label)
+    
 def plot_mutual_information(input_hidden, input_label, filename):
     n_hidden = input_hidden.shape[1]
     sp_tp_mutual_info = np.zeros([n_hidden, 2], dtype=np.float32)
 
-    x = []
     mutual_infos = []
-    # compute MI for each units
+
+    x = []
+    iterable = []
     for i in range(n_hidden):
         x.append(i)
+        #iterable.append((input_hidden[:, i], input_label))
         mutual_infos.append(mutual_information(input_hidden[:, i], input_label))
 
     mutual_info_dict = {}
@@ -51,7 +62,6 @@ def plot_mutual_information(input_hidden, input_label, filename):
 if __name__ == '__main__':
 
     import sys
-    import time
     import signal
     import importlib
 
@@ -187,9 +197,9 @@ if __name__ == '__main__':
             for s in state:
                 vector.append(s.cpu().numpy().flatten())
             for i in range(50):
-                label.append(target1[0])
+                label.append(target1[0].cpu().numpy())
             for i in range(50):
-                label.append(target2[0])
+                label.append(target2[0].cpu().numpy())
         
         vector = np.array(vector)
         label = np.array(label)

@@ -1,23 +1,902 @@
-
-7-Zip [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
-p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz (506E3),ASM,AES-NI)
-
-Scanning the drive:
-1 folder, 40001 files, 434320943 bytes (415 MiB)
-
-Creating archive: uccad.7z
-
-Items to compress: 40002
-
-
-Files read from disk: 40001
-Archive size: 363076584 bytes (347 MiB)
-Everything is Ok
+Mon Jan 18 02:05:52 JST 2021
+Mon Jan 18 19:36:40 JST 2021
 Traceback (most recent call last):
-  File "selected_dropout2.py", line 166, in <module>
-    plot_mutual_information(vector, label, config_name)
-NameError: name 'plot_mutual_information' is not defined
-  File "selected_dropout2.py", line 195
-    return losses.avg, top1.avg, top5.avg
-    ^
-SyntaxError: 'return' outside function
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm16.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm32.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm64.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Traceback (most recent call last):
+  File "selected_dropout4.py", line 68, in <module>
+    with open(f'transfer_entropy_{model_name[:-8]}.toml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'transfer_entropy_fix_sclstm128.toml'
+Mon Jan 18 23:19:50 JST 2021
+Traceback (most recent call last):
+  File "fix_train.py", line 24, in <module>
+    cnn_def = importlib.import_module("{}".format(file_name))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'models.fix_sclstm2048'
+Traceback (most recent call last):
+  File "fix_train.py", line 24, in <module>
+    cnn_def = importlib.import_module("{}".format(file_name))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'models.fix_sclstm8192'
+Mon Jan 18 23:19:52 JST 2021
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined
+Traceback (most recent call last):
+  File "all_mysd.py", line 73, in <module>
+    score = te_score
+NameError: name 'te_score' is not defined

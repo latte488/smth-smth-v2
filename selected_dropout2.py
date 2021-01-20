@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 
 import toml
 
-
 if __name__ == '__main__':
 
     import sys
@@ -29,11 +28,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str)
     parser.add_argument('--drate', type=float)
+    parser.add_argument('--mode', type=str)
     args = parser.parse_args()
 
     config_name = args.config
     drate = args.drate
-
 
     config = load_json_config(f'configs/config_{config_name}.json')
 
@@ -72,11 +71,11 @@ if __name__ == '__main__':
     score = [float(value) for value in mutual_info_dict.values()]
     score = np.array(score)
     d_rate = drate
-    inv = True
+    mode = args.mode
 
     # create model
     print(" > Creating model ... !")
-    model = cnn_def.Model(config['num_classes'], score, d_rate, inv).to(device)
+    model = cnn_def.Model(config['num_classes'], score, d_rate, mode).to(device)
 
     # optionally resume from a checkpoint
     checkpoint_path = os.path.join(config['output_dir'],
@@ -199,3 +198,11 @@ if __name__ == '__main__':
         print(' * Prec@1 {top1.avg:.3f} Prec@5 {top5.avg:.3f}'
               .format(top1=top1, top5=top5))
 
+        acc_filename = 'selected_dropout_acc.toml'
+        with open(acc_filename, 'r') as f:
+            accs = toml.load(f)
+
+        accs[f'{config_name}_{args.mode}_{str(d_rate)}'] = top1.avg
+
+        with open(acc_filename,'w') as f:
+            toml.dump(accs, f)

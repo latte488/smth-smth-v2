@@ -1,7 +1,10 @@
 #!/bin/bash
 
 configs=(
-    'fix_clstm16'
+    'fix_sclstm128'
+    'fix_sclstm64'
+    'fix_sclstm32'
+    'fix_sclstm16'
 )
 
 for config in ${configs[@]}; do
